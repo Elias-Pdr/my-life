@@ -12,7 +12,9 @@ main{
     width: 92%;
     margin: auto;
 }
-
+.containermenu{
+    padding: 20px 0;
+}
 .btnMenu{
     display: flex;
     flex-direction: column;
@@ -42,7 +44,7 @@ main{
 .infosMain{
     background-color: var(--colorFundo2);
     border-radius: 30px;
-    padding: 60px 40px;
+    padding: 40px;
     display: flex;
     align-items: center;
 }
@@ -80,7 +82,7 @@ main{
     overflow: hidden;
 }
 .boll{
-    background-color: yellowgreen;
+    background-color: red;
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -105,7 +107,7 @@ main{
 }
 main > h1{
     color: white;
-    font-size: 4em;
+    font-size: 3em;
     margin: 100px 0px 20px;
 }
 .containerBtnMain > div{
@@ -143,4 +145,41 @@ main > h1{
     font-size: 2.5em;
     font-weight: lighter;
     color: rgba(255, 255, 255, 0.5);
+}
+
+.inputDados{
+    width: 90%;
+    margin: auto;
+    color: white;
+    font-size: 2.3em;
+    display: none;
+}
+.inputDados input{
+    width: 100%;
+    padding: 30px 20px;
+    outline: none;
+    border: 1px solid white;
+    background-color: var(--colorFundo2);
+    border-radius: 30px;
+    font-size: 1em;
+    color: #666;
+
+}
+.inputDados p{
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.inputDados input:last-child{
+    margin-top: 60px;
+    color: white;
+    font-variant: small-caps;
+    letter-spacing: 5px;
+    font-size: 1em;
+}
+
+.inputDados input:last-child:hover{
+    margin-top: 60px;
+    color: var(--colorFundo);
+    background-color: white;   
 }

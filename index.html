@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <div class="containermenu">
+        <div class="containermenu" onclick="cadastrarNovasDados()">
             <div class="btnMenu">
                 <span></span>
                 <span></span>
@@ -35,44 +35,67 @@
 
                 <div class="containerInfos">
                     <p>your balance</p>
-                    <p>R$ 6000,23</p>
+                    <p id="valorIrreal">R$ 6000,23</p>
                 </div>
             </div>
         </div>
     </header>
 
+    <div class="inputDados" id="inputDados">
+        <p>Online</p>
+        <input type="number" class="inputValueMain">
+
+        <p>Carteira</p>
+        <input type="number" class="inputValueMain">
+
+        <p>Fat. card</p>
+        <input type="number" class="inputValueMain">
+
+        <p>Invest</p>
+        <input type="number" class="inputValueMain">
+
+        <p>Dividend</p>
+        <input type="number" class="inputValueMain">
+
+        <p>Prox. fat</p>
+        <input type="number" class="inputValueMain">
+
+        <input type="button" value="salvar" onclick="salvarNovosDados()">
+    </div>
     <main>
         <h1>Achivements</h1>
         <div class="containerBtnMain">
             <div>
                 <div class="btnMain">
                     <p class="numBtn">32</p>
-                    <p class="textBtn">Posts</p>
+                    <p class="textBtn">Online</p>
                 </div>
                 <div class="btnMain">
                     <p class="numBtn">26234</p>
-                    <p class="textBtn">Faeepikoef</p>
+                    <p class="textBtn">Carteira</p>
                 </div>
                 <div class="btnMain">
                     <p class="numBtn">32</p>
-                    <p class="textBtn">Posts</p>
+                    <p class="textBtn">Fat. card</p>
                 </div>
             </div>
             <div>
                 <div class="btnMain">
                     <p class="numBtn">32</p>
-                    <p class="textBtn">Posts</p>
+                    <p class="textBtn">Invest</p>
                 </div>
                 <div class="btnMain">
                     <p class="numBtn">32</p>
-                    <p class="textBtn">Posts</p>
+                    <p class="textBtn">Dividend</p>
                 </div>
                 <div class="btnMain">
                     <p class="numBtn">32</p>
-                    <p class="textBtn">Posts</p>
+                    <p class="textBtn">Prox. fat</p>
                 </div>
             </div>
         </div>
     </main>
+
+    <script src="scriptIndex.js"></script>
 </body>
 </html>
