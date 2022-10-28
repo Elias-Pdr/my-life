@@ -16,12 +16,12 @@ main{
 .btnMenu{
     display: flex;
     flex-direction: column;
-    width: 10%;
-    margin: 40px 0;
+    width: 8%;
+    margin: 70px 0;
 }
 .btnMenu span{
     background-color: white;
-    height: 4px;
+    height: 6px;
     width: 100%;
     margin: 5px;
     border-radius: 3px;
