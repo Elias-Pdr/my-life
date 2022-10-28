@@ -56,11 +56,11 @@ main{
 }
 
 .avatar{
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     background-color: blueviolet;
     border-radius: 50%;
-    border: 10px solid var(--colorFundo2);
+    border: 8px solid var(--colorFundo2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,14 +75,14 @@ main{
 }
 .statusBoll{
     position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 55px;
+    height: 55px;
     margin-right: 5px;
     margin-bottom: 5px;
     overflow: hidden;
 }
 .boll{
-    background-color: red;
+    background-color: yellowgreen;
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -117,7 +117,7 @@ main > h1{
 .btnMain{
     background-color: var(--colorFundo2);
     width: 100%;
-    margin: 10px;
+    margin: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -182,4 +182,10 @@ main > h1{
     margin-top: 60px;
     color: var(--colorFundo);
     background-color: white;   
+}
+#valorDescontado{
+    color: white;
+    opacity: 0.5;
+    font-size: 2em;
+    margin-top: 10px;
 }

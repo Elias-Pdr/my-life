@@ -1,5 +1,7 @@
+let valorDescontado = document.getElementById("valorDescontado")
 let valorIrreal = document.getElementById("valorIrreal")
 let valoresMain = document.querySelectorAll(".numBtn")
+
 let num_online = valoresMain[0]
 let num_carteira = valoresMain[1]
 let num_fatCard = valoresMain[2]
@@ -32,6 +34,7 @@ function atualizarDados() {
     num_dividend.innerHTML = parseInt(localStorage.getItem("num_dividend"))
     num_proxFat.innerHTML = parseInt(localStorage.getItem("num_proxFat"))
     valorIrreal.innerHTML = "R$ " + ((parseInt(num_online.innerHTML) + parseInt(num_carteira.innerHTML) + parseInt(num_dividend.innerHTML)) - parseInt(num_fatCard.innerHTML)).toFixed(2).replace(".", ",")
+    valorDescontado.innerHTML =  "R$ " + ((parseInt(num_online.innerHTML) + parseInt(num_carteira.innerHTML)) - parseInt(num_fatCard.innerHTML)).toFixed(2).replace(".", ",")
 }
 
 function salvarNovosDados() {
