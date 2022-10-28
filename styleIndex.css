@@ -9,7 +9,7 @@ body{
 }
 header,
 main{
-    width: 94%;
+    width: 92%;
     margin: auto;
 }
 
@@ -32,42 +32,70 @@ main{
 
 .containerName{
     color: white;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: 500;
 }
 
 .containerInfosMain{
-    margin: 20px 0;
+    margin: 40px 0;
 }
 .infosMain{
     background-color: var(--colorFundo2);
-    border-radius: 14px;
-    padding: 30px 20px;
+    border-radius: 30px;
+    padding: 60px 40px;
     display: flex;
     align-items: center;
 }
-.containerAvatar{
+.containerAvatar,
+.statusBoll{
     background-color: white;
     border-radius: 50%;
-    padding: 3px;
+    padding: 8px;
 }
+
 .avatar{
-    width: 70px;
-    height: 70px;
+    width: 200px;
+    height: 200px;
     background-color: blueviolet;
     border-radius: 50%;
-    border: 2px solid var(--colorFundo2);
+    border: 10px solid var(--colorFundo2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://preview.redd.it/w9kc4jqt4lx81.jpg?auto=webp&s=2f251ffae50516fc01c5a38bde5932c129f48d29");
+    background-position: center;
+    background-size: cover;
+}
+.containerStatusBoll{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.statusBoll{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.boll{
+    background-color: yellowgreen;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
 .containerInfos{
     width: 100%;
-    margin: 0px 30px;
+    margin: 0px 70px;
 }
 .containerInfos p:nth-child(1){
-    font-size: 2em;
-    text-transform: uppercase;
+    font-size: 3em;
     color: var(--colorOrange);
+    font-variant: small-caps;
+    
 }.containerInfos p:nth-child(2){
-    font-size: 2.5em;
+    font-size: 4em;
     color: white;
     margin-top: 10px;
 }
@@ -77,8 +105,8 @@ main{
 }
 main > h1{
     color: white;
-    font-size: 2em;
-    margin: 20px 0;
+    font-size: 4em;
+    margin: 100px 0px 20px;
 }
 .containerBtnMain > div{
     display: flex;
@@ -87,14 +115,14 @@ main > h1{
 .btnMain{
     background-color: var(--colorFundo2);
     width: 100%;
-    margin: 5px;
+    margin: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     color: white;
-    padding: 26px;
-    border-radius: 10px;
+    padding: 40px;
+    border-radius: 30px;
     overflow: hidden;
 }
 .btnMain:hover{
@@ -108,9 +136,11 @@ main > h1{
     margin-right: 0;
 }
 .btnMain p:nth-child(1){
-    margin-bottom: 10px;
-    font-size: 3em;
+    margin-bottom: 20px;
+    font-size: 4em;
 }
 .btnMain p:nth-child(2){
-    font-size: 2em;
+    font-size: 2.5em;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.5);
 }
